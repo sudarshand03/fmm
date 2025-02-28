@@ -1,8 +1,10 @@
-// src/main.cpp
 #include <iostream>
+#include "../include/point_source.hpp"
+
+using namespace fmm;
 
 int main() {
-    std::cout << "Hello, FMM Project!" << std::endl;
+    PointSource<3> source(Vector<3>({{1.0, 2.0, 3.0}}), 5.0);
+    std::cout << source << std::endl;
     return 0;
 }
-
