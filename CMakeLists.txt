@@ -20,6 +20,9 @@ file(GLOB SOURCES "${PROJECT_SOURCE_DIR}/src/*.cpp")
 
 add_executable(FMMProject ${SOURCES})
 
+add_executable(testvec tests/testvec.cpp)
+
+
 install(TARGETS FMMProject RUNTIME DESTINATION bin)
 
 message(STATUS "Configuration complete. Build type: ${CMAKE_BUILD_TYPE}")
